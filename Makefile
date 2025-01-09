@@ -8,6 +8,9 @@ test:
 	python3 -m pytest -vv test_*.py
 build:
 	#build
+	docker build -t fastapi_demo .
+run:
+	docker run -d -p 8000:8000 fastapi_demo
 deploy:
 	#deploy
 
