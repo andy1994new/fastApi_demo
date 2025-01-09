@@ -5,7 +5,7 @@ format:
 lint:
 	pylint --disable=R,C *.py mylib/*.py
 test:
-	python3 -m pytest -vv --cov=mylib test_logic.py
+	python3 -m pytest -vv test_*.py
 build:
 	#build
 deploy:
